@@ -113,6 +113,7 @@ preparedData (data) {
         })
         
         return chartData
+
 }
 
     render() {

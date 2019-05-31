@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=BioRhyme&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -19,17 +21,22 @@ body {
 
 h1 {
   color: rgb(180,151,90);
+  font-family: 'BioRhyme', serif;
+font-size: 40px
 }
 
 h2 {
   color: white;
-  outline: white
+  font-family: 'BioRhyme', serif;
+  font-size: 35px
 }
 
 h3 {
-  color: white
+  color: white;
+  font-family: 'BioRhyme', serif;
 }
 
 h4 {
-  color: white
+  color: white;
+  font-family: 'BioRhyme', serif;
 }

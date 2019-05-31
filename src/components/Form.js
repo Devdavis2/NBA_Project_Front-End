@@ -22,26 +22,33 @@ class Form extends React.Component {
         console.log('hi')
         event.preventDefault()
         console.log(this.state.formInputs);
-        let shot_profiles = {
-            field_goals_made: this.state.formInputs.field_goals_made,
-            field_goals_attempted: '',
-            field_goal_percentage: '',
-            area: '',
-        }
+        let shot_profiles = this.state.formInputs
+        console.log(shot_profiles);
+        
+            // field_goals_made: field_goals_made,
+            // field_goals_attempted: '',
+            // field_goal_percentage: '',
+            // area: '',
+            
   
-
+        // let shot_profiles = {
+        //     field_goals_made: 1,
+        //     field_goals_attempted: 1,
+        //     field_goal_percentage: 50.0,
+        //     area: 'half court',
+        // }
 
         event.preventDefault()
         fetch
-        // (`/nba_finals${nba_final_id}/shot_profiles`, 
-        // {
-        //   body: JSON.stringify(shot_profiles),
-        //   method: 'POST',
-        //   headers: {
-        //     'Accept': 'application/json, text/plain, */*',
-        //     'Content-Type': 'application/json'
-        //   }
-        // })
+        (`http://localhost:3000/nba_finals/${1}/shot_profiles`, 
+        {
+          body: JSON.stringify(shot_profiles),
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+          }
+        })
         .then(createdshot_profile => {
           return createdshot_profile.json()
         })
@@ -67,11 +74,15 @@ class Form extends React.Component {
 
     handleChange(event, formInputs) {
         event.preventDefault()
-        console.log(event.target)
+        console.log(event.target.id)
         console.log(event.target.value)
         this.setState({
-            [this.state.formInputs.name]: event.target.value})
+            [event.target.id]: event.target.value})
+            console.log(this.state.formInputs);
     }
+
+
+
 
     render() {
         return (

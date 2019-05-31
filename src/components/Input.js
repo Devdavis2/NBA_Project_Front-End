@@ -1,16 +1,14 @@
 import React from 'react'
 
 const Input = props => {
-  const {handleChange, name, team, placeholder, conference, type, value, shot_profile} = props
+  const {handleChange, name, placeholder, type} = props
     return (
       <>
-        <label htmlFor={team}>{conference}</label>
+        <label htmlFor={name}></label>
         <input
-            name={name}
-          id={shot_profile}
-          shot_profile={shot_profile}
+          name={name}
+          id={name}
           type={type}
-          value={value}
           onChange={handleChange}
           placeholder={placeholder}
         />
