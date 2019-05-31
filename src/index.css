@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  background-image: url(https://cdn-s3.si.com/s3fs-public/styles/marquee_large_2x/public/2019/05/28/stephen-curry-kawhi-leonard-nba-finals-preview.jpg?itok=c3QKzG7L) 
+  
+}
+
+h1 {
+  color: rgb(180,151,90);
+}
+
+h2 {
+  color: white;
+  outline: white
+}
+
+h3 {
+  color: white
+}
+
+h4 {
+  color: white
+}
