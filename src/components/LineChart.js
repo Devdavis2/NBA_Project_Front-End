@@ -101,10 +101,10 @@ preparedData (data) {
     chartData.labels.push(shot_profiles.area)
 // FGM DATA
     
-    chartData.datasets[i].data.push(shot_profiles.field_goals_made)
+    // chartData.datasets[i].data.push(shot_profiles.field_goals_made)
 
 // FGA DATA
-    // chartData.datasets[i].data.push(shot_profiles.field_goals_attempted)
+    chartData.datasets[i].data.push(shot_profiles.field_goals_attempted)
 
 // FG% DATA
     // chartData.datasets[i].data.push(shot_profiles.field_goal_percentage)
@@ -122,7 +122,8 @@ preparedData (data) {
            
         <h1>2019 NBA Finals</h1>
         <h2>Who do you think will win?</h2>
-        <h3> Review the 2019 postseason team shot profiles to make your bet</h3>
+        <button onClick={this.handleClick}>Golden State Warriors</button> <button onClick={this.handleClick}>Toronto Raptors</button>
+        <h3> Review the 2019 postseason data to make your decision</h3>
         <h4> Post Season Field Goals Made </h4>
 <canvas id="shot_profile" width="300" height="100"></canvas>
 

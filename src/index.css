@@ -32,11 +32,12 @@ h2 {
 }
 
 h3 {
-  color: white;
+  color: rgb(206,17,65);
   font-family: 'BioRhyme', serif;
+  font-size: 25px
 }
 
 h4 {
-  color: white;
+  color: rgb(206,17,65);;
   font-family: 'BioRhyme', serif;
 }
